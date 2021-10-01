@@ -3,7 +3,7 @@ import Meetups from './Meetups';
 import Webinars from './Webinars';
 import Training from './Training';
 
-const Screen4 = () => {
+const Events = () => {
     return (
         <span style={{ background: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', }}>
             <Training />
@@ -13,4 +13,4 @@ const Screen4 = () => {
     )
 }
 
-export default Screen4
+export default Events

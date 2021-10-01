@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Tab from '@mui/material/Tab';
 import ToolBar from '@mui/material/Toolbar';
 import { makeStyles } from '@mui/styles';
-import logo from '../productwhite.png'
+import logo from '../images/productwhite.png'
 
 const useStyles = makeStyles({
     header: {

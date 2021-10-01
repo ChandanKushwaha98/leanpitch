@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/system'
-import img from '../random1.jpg'
+import img from '../images/random1.jpg'
 import { makeStyles } from '@mui/styles'
 import { Button } from '@mui/material'
 const useStyles = makeStyles({

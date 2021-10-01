@@ -2,8 +2,7 @@ import React from 'react'
 import { makeStyles } from '@mui/styles';
 import { Box } from '@mui/system';
 import { Typography } from '@mui/material';
-import arrowimg from '../red_arrow.png';
-import randomimg1 from '../random1.jpg'
+import arrowimg from '../images/red_arrow.png';
 import Button from '@mui/material/Button';
 import Arrow from '@mui/icons-material/ArrowForward';
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@mui/system'
 import { Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles'
-import img from '../pt_lab_image.png';
+import img from '../images/pt_lab_image.png';
 import Button from '@mui/material/Button';
 import Arrow from '@mui/icons-material/ArrowForward';
 const useStyles = makeStyles({

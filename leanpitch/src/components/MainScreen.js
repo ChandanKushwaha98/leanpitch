@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import { makeStyles } from '@mui/styles';
-import bgimg from '../mainPage.jpg'
+import bgimg from '../images/mainPage.jpg'
 import LeftPanel from './LeftPanel';
 
 const useStyles = makeStyles({
