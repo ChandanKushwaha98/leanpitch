@@ -12,8 +12,8 @@ const Webinars = () => {
     };
 
     return (
-        <Box >
-            <Typography variant="h2" component="h2" >Our Webinars</Typography>
+        <Box style={{backgroundColor:'white',borderRadius:'10px'}}>
+            <Typography variant="h2" component="h2" style={{color:'black'}}>Our Webinars</Typography>
             <Box style={{ display: 'flex',justifyContent: 'center' }}>
                 <Box>
                     <ToggleButtonGroup style={{}} color="standard" value={alignment} exclusive onChange={handleChange}>

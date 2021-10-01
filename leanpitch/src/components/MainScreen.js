@@ -7,7 +7,7 @@ import LeftPanel from './LeftPanel';
 const useStyles = makeStyles({
     MainScreen: {
         backgroundImage: `url(${bgimg})`,
-        width: '100% !important',
+        width: '100vw',
         zIndex: '0',
         height: '90vh',
         backgroundRepeat: "no-repeat",
@@ -23,8 +23,7 @@ const useStyles = makeStyles({
 const MainScreen = () => {
     const classes = useStyles();
     return (
-        <Box className={classes.MainScreen}>
-            <LeftPanel />
+        <Box className={classes.MainScreen}><LeftPanel />
         </Box>
     )
 }

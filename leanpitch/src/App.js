@@ -5,7 +5,7 @@ import MainScreen from './components/MainScreen';
 import { makeStyles } from '@mui/styles';
 import Screen2 from './components/Screen2';
 import Screen3 from './components/Screen3';
-import Screen4 from './components/Screen4';
+import Trainings from './components/Trainings';
 import Screen5 from './components/Screen5';
 import Screen6 from './components/Screen6';
 
@@ -23,7 +23,7 @@ function App() {
       <MainScreen />
       <Screen2 />
       <Screen3 />
-      <Screen4 />
+      <Trainings />
       <Screen5 />
       <Screen6 />
 

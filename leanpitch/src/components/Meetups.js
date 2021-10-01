@@ -139,7 +139,7 @@ const Meetups = () => {
 
     };
     return (
-        <Box><Typography variant="h2" component="h2" style={{ display: 'flex', justifyContent: 'center' }}>Our Meetups</Typography>
+        <Box style={{backgroundColor:'white',borderRadius:'10px'}}><Typography variant="h2" component="h2" style={{ display: 'flex', justifyContent: 'center',color:'black' }}>Our Meetups</Typography>
             <Box style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box>
                     <ToggleButtonGroup style={{}} color="standard" value={alignment} exclusive onChange={handleChange}>
@@ -157,7 +157,7 @@ const Meetups = () => {
                     />
                 </Box>
             </Box>
-            <Typography variant="h4" component="h4" style={{ margin: '4vh' }}>Awesome Meetups would be here soon!</Typography>
+            <Typography variant="h5" component="h5" style={{ margin: '4vh',color:'black' }}>Awesome Meetups would be here soon!</Typography>
         </Box>
     )
 }

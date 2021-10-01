@@ -28,7 +28,7 @@ const useStyles = makeStyles({
         width: '45vw',
 
     },
-    sub_container2_img: {
+    sub_container2: {
         paddingTop: '6vh',
         height: '50vh'
     }
@@ -49,8 +49,13 @@ const Screen2 = () => {
                     <Typography variant="body1" color="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum laboriosam minus? Ullam, repudiandae. Quas, reprehenderit! Exercitationem eum nam non labore. Sed saepe omnis consequuntur ipsam eius asperiores molestiae quia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut dolore ipsa consequatur harum ut omnis expedita facere, dignissimos necessitatibus rerum, numquam ex animi? Atque in enim reprehenderit minima doloremque quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias, ratione ab velit nostrum necessitatibus beatae labore, iusto non aliquid in ullam adipisci repellendus molestiae, temporibus itaque possimus nisi deleniti.lorem numquam ex animi? Atque in enim reprehenderit minima doloremque quod? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias, ratione ab velit nostrum necessitatibus beatae labore, iusto non aliquid in ullam adipisci repellendus molestiae, temporibus itaque possimus nisi deleniti.lorem
                     </Typography>
                 </Box>
-                <Box >
-                    <img className={classes.sub_container2_img} src={randomimg1} alt="" />
+                <Box className={classes.sub_container2}>
+                    <iframe src='https://www.youtube.com/embed/S8KwpKxRmsc?autoplay=1&mute=1' width="100%" height="300"
+                        frameBorder='0'
+                        allow='autoplay; encrypted-media'
+                        allowFullScreen
+                        title='video'
+                    />
                 </Box>
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'center', paddingBottom: '2vh', paddingTop: '4vh' }}>
