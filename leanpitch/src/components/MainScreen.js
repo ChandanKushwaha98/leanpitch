@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import { makeStyles } from '@mui/styles';
-import bgimg from '../classroom.jpg'
+import bgimg from '../mainPage.jpg'
 import LeftPanel from './LeftPanel';
 
 const useStyles = makeStyles({
@@ -15,7 +15,9 @@ const useStyles = makeStyles({
         paddingLeft: '.5rem',
         paddingTop: '1rem',
         marginTop: '64px',
-        backgroundColor: 'black'
+        backgroundColor: 'black',
+        color: 'white',
+        fontWeight:'700'
     }
 });
 const MainScreen = () => {

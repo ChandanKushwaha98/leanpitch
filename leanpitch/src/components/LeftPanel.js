@@ -22,11 +22,14 @@ const useStyles = makeStyles({
 })
 
 const LeftPanel = () => {
+    const handleMouseHover = (e) => {
+        console.log(e);
+    }
     const classes = useStyles();
     return (
         <Box className="leftPane">
             <Box className={classes.Stack}>
-                <Box className={classes.menu}>Trainings</Box>
+                <Box className={classes.menu} onMouseHover={(e)=>{handleMouseHover(e)}}>Trainings</Box>
                 <Box className={classes.menu}>Meetups</Box>
                 <Box className={classes.menu}>Webinars</Box>
                 <Box className={classes.menu}>Conference</Box>
