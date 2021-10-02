@@ -18,7 +18,7 @@ const Podcasts = ({border = 'none',bgColor = 'white'}) => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: '10px',
+            borderRadius: '0px',
             paddingBottom: '2vh',
             border: `${border}`,
             width: '85vw',

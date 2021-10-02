@@ -17,10 +17,10 @@ const useStyles = makeStyles({
         marginLeft: '1vw',
         width: '12vw'
     },
-    rightPane: { display: 'flex', },
+    rightPane: { display: 'flex',width:'85.37vw' },
     menu: {
         padding: '1.7vh',
-        backgroundColor: 'rgba(0,0,0,0.1)',
+        backgroundColor: 'rgba(0,0,0,0.7)',
         borderRadius: '0px',
         marginBottom: '1vh',
         cursor: 'pointer',
@@ -35,18 +35,19 @@ const useStyles = makeStyles({
 const LeftPanel = () => {
     const [option, setOption] = useState('');
     const handleMouseEnter = e => {
-        // e.target.style.background = "green"
-        // console.log(e.target,"Target")
+
     }
     const handleMouseHover = (e) => {
         setOption(e.target.innerHTML);
 
-        e.target.style.width = '8.5vw'
+        e.target.style.width = '10.5vw'
         e.target.style.background = "yellow"
+        e.target.style.color='black'
     }
     const handleMouseOut = (e) => {
         setOption('');
-        e.target.style.background = 'rgba(0,0,0,0.1)'
+        e.target.style.background = 'rgba(0,0,0,0.7)'
+        e.target.style.color='white'
     }
     const classes = useStyles();
     return (
@@ -65,14 +66,14 @@ const LeftPanel = () => {
                 <span className={classes.menu} onMouseOver={(e) => handleMouseHover(e)} onMouseOut={handleMouseOut}>About Us</span>
             </span>
             <span className={classes.rightPane}>
-                {option === 'Trainings' && <Training border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'Trainings' && <Training border='5px solid yellow' bgColor='rgba(0,0,0,0.7)' />}
                 {option === 'Meetups' && <Meetups border='5px solid yellow' bgColor='rgba(255,255,255,0.5)' />}
-                {option === 'Webinars' && <Webinars border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
-                {option === 'Conference' && <Conference border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
-                {option === 'Videos' && <Videos border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
-                {option === 'PM Speak Series' && <PMSpeaks border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
-                {option === 'Blogs' && <Blogs border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
-                {option === 'Podcasts' && <Podcasts border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'Webinars' && <Webinars border='5px solid yellow' bgColor='rgba(0,0,0,0.7)' />}
+                {option === 'Conference' && <Conference border='5px solid yellow' bgColor='rgba(0,0,0,0.7)' />}
+                {option === 'Videos' && <Videos border='5px solid yellow' bgColor='rgba(0,0,0,0.7)' />}
+                {option === 'PM Speak Series' && <PMSpeaks border='5px solid yellow' bgColor='rgba(0,0,0,0.7)' />}
+                {option === 'Blogs' && <Blogs border='5px solid yellow' bgColor='rgba(0,0,0,0.7)' />}
+                {option === 'Podcasts' && <Podcasts border='5px solid yellow' bgColor='rgba(0,0,0,0.7)' />}
             </span>
         </span>
     )
