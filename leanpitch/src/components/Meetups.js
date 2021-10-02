@@ -6,7 +6,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import TextField from '@mui/material/TextField';
 import { Typography } from '@mui/material';
 
-const Meetups = () => {
+const Meetups = ({ border = 'none', bgColor = 'white' }) => {
     const top100Films = [
         { label: 'The Shawshank Redemption', year: 1994 },
         { label: 'The Godfather', year: 1972 },
@@ -139,7 +139,8 @@ const Meetups = () => {
 
     };
     return (
-        <Box style={{backgroundColor:'white',borderRadius:'10px'}}><Typography variant="h2" component="h2" style={{ display: 'flex', justifyContent: 'center',color:'black' }}>Our Meetups</Typography>
+        <Box style={{ backgroundColor: `${bgColor}`, borderRadius: '10px', border: `${border}`, width: '85vw', }}>
+            
             <Box style={{ display: 'flex', justifyContent: 'center' }}>
                 <Box>
                     <ToggleButtonGroup style={{}} color="standard" value={alignment} exclusive onChange={handleChange}>
@@ -157,7 +158,7 @@ const Meetups = () => {
                     />
                 </Box>
             </Box>
-            <Typography variant="h5" component="h5" style={{ margin: '4vh',color:'black' }}>Awesome Meetups would be here soon!</Typography>
+            <Typography variant="h5" component="h5" style={{ margin: '4vh', color: 'black' }}>Awesome Meetups would be here soon!</Typography>
         </Box>
     )
 }

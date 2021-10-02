@@ -7,7 +7,7 @@ import LeftPanel from './LeftPanel';
 const useStyles = makeStyles({
     MainScreen: {
         backgroundImage: `url(${bgimg})`,
-        width: '100vw',
+        width: '85vw',
         zIndex: '0',
         height: '90vh',
         backgroundRepeat: "no-repeat",

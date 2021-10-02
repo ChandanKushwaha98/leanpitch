@@ -3,10 +3,10 @@ import Box from '@mui/material/Box';
 import Navbar from './components/Navbar';
 import MainScreen from './components/MainScreen';
 import { makeStyles } from '@mui/styles';
-import Screen2 from './components/Screen2';
+import WhyWe from './components/WhyWe';
 import Screen3 from './components/Screen3';
 import Trainings from './components/Trainings';
-import Screen5 from './components/Screen5';
+import Conference from './components/Conference';
 import Screen6 from './components/Screen6';
 
 const useStyles = makeStyles({
@@ -21,10 +21,10 @@ function App() {
     <Box className={classes.App}>
       <Navbar />
       <MainScreen />
-      <Screen2 />
+      <WhyWe />
       <Screen3 />
       <Trainings />
-      <Screen5 />
+      <Conference />
       <Screen6 />
 
 

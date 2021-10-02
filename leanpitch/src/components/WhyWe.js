@@ -8,9 +8,7 @@ import Arrow from '@mui/icons-material/ArrowForward';
 
 
 const useStyles = makeStyles({
-    screen2: {
-        backgroundColor: 'black'
-    },
+    
     heading: {
         paddingTop: '4vh',
         color: 'yellow',
@@ -33,10 +31,10 @@ const useStyles = makeStyles({
     }
 
 })
-const Screen2 = () => {
+const Screen2 = ({border = 'none'}) => {
     const classes = useStyles();
     return (
-        <Box className={classes.Screen2}>
+        <Box style={{backgroundColor: 'black',border: `${border}`,width: '85vw'}}>
             <Typography variant="h2" component="h2" className={classes.heading}>
                 Why We Matter?
             </Typography>

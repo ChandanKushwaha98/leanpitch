@@ -10,18 +10,21 @@ const useStyles = makeStyles({
         width: '2vw'
     }
 })
-const PMSpeaks = () => {
+const PMSpeaks = ({border = 'none',bgColor = 'white'}) => {
     const classes = useStyles()
     return (
         <Box style={{
-            backgroundColor: 'white', display: 'flex',
+            backgroundColor: `${bgColor}`,
+            display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
             borderRadius: '10px',
-            paddingBottom: '2vh'
+            paddingBottom: '2vh',
+            border: `${border}`,
+            width: '85vw'
         }}>
-            <Typography variant="h3" component="h3" style={{ color: 'black' }} >PM Speaks Series</Typography>
+            
             <Box style={{ display: 'flex', alignItems: 'space-between', justifyContent: 'space-between', }}>
                 <Box style={{ marginRight: '2vw' }}>
                     <ReactPlayer controls autoPlay='autoPlay' width='240px' height='120px' className={classes.media} url='https://www.youtube.com/watch?v=7sDY4m8KNLc' /></Box>

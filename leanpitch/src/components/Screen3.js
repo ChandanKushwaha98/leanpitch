@@ -17,12 +17,12 @@ const useStyles = makeStyles({
     }
 })
 
-const Screen3 = () => {
+const Screen3 = ({border = 'none'}) => {
     const classes = useStyles();
     return (
         <Box style={{
             display: 'flex',
-            justifyContent: 'space-around', alignItems: 'center', height: '100vh',
+            justifyContent: 'space-around', alignItems: 'center', height: '100vh',border: `${border}`
 
         }}>
             <Box className={classes.sub_container1}>
