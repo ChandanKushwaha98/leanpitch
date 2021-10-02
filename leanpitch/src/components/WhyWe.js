@@ -34,7 +34,7 @@ const useStyles = makeStyles({
 const Screen2 = ({border = 'none'}) => {
     const classes = useStyles();
     return (
-        <Box style={{backgroundColor: 'black',border: `${border}`,width: '85vw'}}>
+        <Box style={{backgroundColor: 'black',border: `${border}`,width: '100%'}}>
             <Typography variant="h2" component="h2" className={classes.heading}>
                 Why We Matter?
             </Typography>

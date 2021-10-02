@@ -18,15 +18,14 @@ const Screen6 = ({ border = 'none' }) => {
             border: `${border}`
 
         }}>
-            <Typography variant="h3" component="h3" style={{ color: 'black' }} >Videos</Typography>
+            <Typography variant="h3" component="h3" style={{ color: 'black', marginTop: '4vh' }} >Videos</Typography>
             <Videos />
-            <Typography variant="h3" component="h3" style={{ color: 'black' }} >PM Speaks Series</Typography>
+            <Typography variant="h3" component="h3" style={{ color: 'black', marginTop: '4vh' }} >PM Speaks Series</Typography>
             <PMSpeaks />
-            <Typography variant="h3" component="h3" style={{ color: 'black' }} >Blogs</Typography>
+            <Typography variant="h3" component="h3" style={{ color: 'black', marginTop: '4vh' }} >Blogs</Typography>
             <Blogs />
-            <Typography variant="h3" component="h3" style={{ color: 'black' }} >Podcasts</Typography>
+            <Typography variant="h3" component="h3" style={{ color: 'black', marginTop: '4vh' }} >Podcasts</Typography>
             <Podcasts />
-            <Toggle/>
         </Box>
     )
 }

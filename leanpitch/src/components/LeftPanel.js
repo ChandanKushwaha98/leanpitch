@@ -27,6 +27,7 @@ const useStyles = makeStyles({
         color: 'white',
         fontWeight: '600',
         fontSize: '1.1rem',
+        textAlign:'left'
     }
 
 })

@@ -21,7 +21,8 @@ const Blogs = ({border = 'none',bgColor = 'white'}) => {
             borderRadius: '0px',
             paddingBottom: '2vh',
             border: `${border}`,
-            width: '85vw'
+            width: '85vw',
+            height:'85vh'
         }}>
            
             <Box style={{ display: 'flex', alignItems: 'space-between', justifyContent: 'space-between', }}>

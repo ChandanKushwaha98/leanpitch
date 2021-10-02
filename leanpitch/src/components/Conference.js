@@ -18,7 +18,7 @@ const Screen5 = ({ border = 'none', bgColor = 'black' }) => {
             justifyContent: 'center',
             borderRadius: '0px',
             textAlign: 'center',
-            width: '100%'
+            width: '85vw'
         }}>
 
             <DarkToggle style={{ marginTop: '5vh', marginBottom: '5vh' }} />
