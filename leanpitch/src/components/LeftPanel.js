@@ -15,26 +15,18 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         marginLeft: '1vw',
-        width:'10vw'
+        width: '12vw'
     },
-    rightPane: { display:'flex',},
+    rightPane: { display: 'flex', },
     menu: {
-        padding: '1.8vh',
+        padding: '1.7vh',
         backgroundColor: 'rgba(0,0,0,0.1)',
-        borderRadius: '10px',
+        borderRadius: '0px',
         marginBottom: '1vh',
-        // marginRight: '5vw',
-        // width: '10vw',
-
         cursor: 'pointer',
         color: 'white',
-        fontWeight: '700',
+        fontWeight: '600',
         fontSize: '1.1rem',
-        // '&:hover': {
-        //     width: '100vw',
-        //     border: '4px solid yellow'
-        // }
-
     }
 
 })
@@ -48,7 +40,7 @@ const LeftPanel = () => {
     const handleMouseHover = (e) => {
         setOption(e.target.innerHTML);
 
-        e.target.style.width = '8.125vw'
+        e.target.style.width = '8.5vw'
         e.target.style.background = "yellow"
     }
     const handleMouseOut = (e) => {
@@ -73,13 +65,13 @@ const LeftPanel = () => {
             </span>
             <span className={classes.rightPane}>
                 {option === 'Trainings' && <Training border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
-                {option === 'Meetups' && <Meetups border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'Meetups' && <Meetups border='5px solid yellow' bgColor='rgba(255,255,255,0.5)' />}
                 {option === 'Webinars' && <Webinars border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
-                {option === 'Conference' && <Conference border='5px solid yellow' bgColor='rgba(0,0,0,0.1)'/>}
-                {option === 'Videos' && <Videos border='5px solid yellow' bgColor='rgba(0,0,0,0.1)'/>}
-                {option === 'PM Speak Series' && <PMSpeaks border='5px solid yellow' bgColor='rgba(0,0,0,0.1)'/>}
-                {option === 'Blogs' && <Blogs border='5px solid yellow' bgColor='rgba(0,0,0,0.1)'/>}
-                {option === 'Podcasts' && <Podcasts border='5px solid yellow'bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'Conference' && <Conference border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'Videos' && <Videos border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'PM Speak Series' && <PMSpeaks border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'Blogs' && <Blogs border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
+                {option === 'Podcasts' && <Podcasts border='5px solid yellow' bgColor='rgba(0,0,0,0.1)' />}
             </span>
         </span>
     )

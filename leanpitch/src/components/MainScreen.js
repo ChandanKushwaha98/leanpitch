@@ -9,7 +9,7 @@ const useStyles = makeStyles({
         backgroundImage: `url(${bgimg})`,
         width: '85vw',
         zIndex: '0',
-        height: '90vh',
+        height: '88vh',
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         paddingLeft: '.5rem',

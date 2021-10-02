@@ -5,6 +5,7 @@ import PMSpeaks from './PMSpeaks'
 import Blogs from './Blogs'
 import Podcasts from './Podcasts'
 import { Typography } from '@mui/material';
+import Toggle from './Toggle';
 
 
 const Screen6 = ({ border = 'none' }) => {
@@ -25,7 +26,7 @@ const Screen6 = ({ border = 'none' }) => {
             <Blogs />
             <Typography variant="h3" component="h3" style={{ color: 'black' }} >Podcasts</Typography>
             <Podcasts />
-
+            <Toggle/>
         </Box>
     )
 }

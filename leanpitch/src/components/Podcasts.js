@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { makeStyles } from '@mui/styles';
-import { Typography } from '@mui/material';
 import { Box } from '@mui/system'
 
 const useStyles = makeStyles({

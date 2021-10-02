@@ -15,7 +15,7 @@ const Training = ({ border = 'none',bgColor = 'white' }) => {
         { title: 'Advance Certified Scrum Product Owner', subtitle: 'Upcoming Training', date: '26th Oct, 2021', bgColor: 'yellow' },
         { title: 'Product Management Bootcamp', subtitle: 'Upcoming Training', date: 'Will be scheduled soon ', bgColor: 'grey' }]
     return (
-        <Box style={{ backgroundColor: `${bgColor}`, display: 'flex', flexDirection: 'column', borderRadius: '10px', border: `${border}`,width: '85vw' }}>
+        <Box style={{ backgroundColor: `${bgColor}`, display: 'flex', flexDirection: 'column', borderRadius: '0px', border: `${border}`,width: '85vw',height:'85vh' }}>
             
             <Box style={{ display: 'flex' }}>{cardValues.map(i => <Card title={i.title} subtitle={i.subtitle} bgColor={i.bgColor} date={i.date} />)}
             </Box>

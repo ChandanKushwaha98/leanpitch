@@ -14,15 +14,17 @@ const Videos = ({border = 'none',bgColor = 'white'}) => {
     const classes = useStyles()
     return (
         <Box style={{
+            height: '85vh',
             backgroundColor: `${bgColor}`,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: '10px',
+            borderRadius: '0px',
             paddingBottom: '2vh',
             border: `${border}`,
-            width: '85vw'
+            width: '85vw',
+            
         }}>
             
             <Box style={{ display: 'flex', alignItems: 'space-between', justifyContent: 'space-between', }}>

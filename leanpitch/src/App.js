@@ -7,11 +7,11 @@ import WhyWe from './components/WhyWe';
 import Screen3 from './components/Screen3';
 import Trainings from './components/Trainings';
 import Conference from './components/Conference';
-import Screen6 from './components/Screen6';
-
+import Events from './components/Events';
+import { Typography } from '@mui/material';
 const useStyles = makeStyles({
   App: {
-    backgroundColor: 'black'
+    backgroundColor: 'black',
   }
 });
 function App() {
@@ -24,10 +24,15 @@ function App() {
       <WhyWe />
       <Screen3 />
       <Trainings />
+      <Typography variant="h3" component="h3" style={{
+        color: 'white',
+        textAlign: 'center',
+        marginTop: '3vh'
+      }}>
+        Our Conference
+      </Typography>
       <Conference />
-      <Screen6 />
-
-
+      <Events />
     </Box>
   );
 }

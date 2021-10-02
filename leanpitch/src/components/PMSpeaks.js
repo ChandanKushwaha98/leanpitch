@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { makeStyles } from '@mui/styles';
-import { Typography } from '@mui/material';
 import { Box } from '@mui/system'
 
 const useStyles = makeStyles({
@@ -19,10 +18,11 @@ const PMSpeaks = ({border = 'none',bgColor = 'white'}) => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: '10px',
+            borderRadius: '0px',
             paddingBottom: '2vh',
             border: `${border}`,
-            width: '85vw'
+            width: '85vw',
+            height:'85vh'
         }}>
             
             <Box style={{ display: 'flex', alignItems: 'space-between', justifyContent: 'space-between', }}>

@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { makeStyles } from '@mui/styles';
-import { Typography } from '@mui/material';
 import { Box } from '@mui/system'
 
 const useStyles = makeStyles({
@@ -10,16 +9,16 @@ const useStyles = makeStyles({
         width: '2vw'
     }
 })
-const Blogs = ({border = 'none'}) => {
+const Blogs = ({border = 'none',bgColor = 'white'}) => {
     const classes = useStyles()
     return (
         <Box style={{
-            backgroundColor: 'white',
+            backgroundColor: `${bgColor}`,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            borderRadius: '10px',
+            borderRadius: '0px',
             paddingBottom: '2vh',
             border: `${border}`,
             width: '85vw'
